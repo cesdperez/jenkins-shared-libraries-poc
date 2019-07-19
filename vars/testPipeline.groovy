@@ -6,7 +6,11 @@ def call(body) {
     body()
 
     pipeline {
-        agent any
+        agent {
+            node {
+                label "${params.node}"
+            }
+        }
         stages {
             stage('stage 1') {
                 steps {
