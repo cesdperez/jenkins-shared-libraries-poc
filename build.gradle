@@ -1,4 +1,6 @@
-plugin: 'groovy'
+plugins{
+    id 'groovy'
+}
 
 sourceSets {
     main {

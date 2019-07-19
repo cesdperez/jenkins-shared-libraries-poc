@@ -1,20 +1,22 @@
-import com.lesfurets.jenkins.unit.*
-import org.junit.Before
-import org.junit.Test
+import testSupport.PipelineSpockTestBase
 
-class TestPipelineTest extends BasePipelineTest {
+class TestPipelineTest extends PipelineSpockTestBase {
 
     def testPipeline
 
-    @Before
-    void setUp() {
-        super.setUp()
+    def setup() {
         testPipeline = loadScript("vars/testPipeline.groovy")
     }
 
-    @Test
-    void testCall() {
-        def result = testPipeline(node: "n", application: "app")
+    def cleanup() {
         printCallStack()
+    }
+
+    def 'It works'() {
+        when:
+        testPipeline(node: "n", application: "app")
+
+        then:
+        assertJobStatusSuccess()
     }
 }
