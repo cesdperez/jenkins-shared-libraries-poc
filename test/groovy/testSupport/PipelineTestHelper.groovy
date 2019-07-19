@@ -3,7 +3,6 @@ package testSupport
 import com.lesfurets.jenkins.unit.BasePipelineTest
 import static com.lesfurets.jenkins.unit.MethodSignature.method
 
-
 class PipelineTestHelper extends BasePipelineTest {
 
     /**

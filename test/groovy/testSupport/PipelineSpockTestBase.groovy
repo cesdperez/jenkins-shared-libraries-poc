@@ -2,7 +2,6 @@ package testSupport
 
 import com.lesfurets.jenkins.unit.RegressionTest
 import spock.lang.Specification
-import testSupport.PipelineTestHelper
 
 /**
  * A base class for Spock testing using the pipeline helper
