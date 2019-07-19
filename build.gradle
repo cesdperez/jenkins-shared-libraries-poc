@@ -14,6 +14,14 @@ sourceSets {
         groovy {
             srcDirs = ['src','vars']
         }
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+    test {
+        groovy {
+            srcDirs = ['test']
+        }
     }
 }
 
