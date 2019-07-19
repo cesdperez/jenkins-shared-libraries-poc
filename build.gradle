@@ -9,6 +9,14 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src','vars']
+        }
+    }
+}
+
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.5.0"
     testCompile "com.lesfurets:jenkins-pipeline-unit:1.1"
