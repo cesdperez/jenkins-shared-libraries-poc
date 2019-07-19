@@ -1,6 +1,6 @@
 # Jenkins Shared Libraries POC
 
-This is a scaffolding for a [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) repository.
+These are the results of an afternoon trying to setup a repository for [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/).
 
 - Gradle setup for recognizing the structure imposed by Shared Libraries.
 - Unit test libraries and small examples for testing global vars and also pipelines.
